@@ -2,7 +2,7 @@
 platform: linux
 
 inputs:
-- name: branch
+- name: git-branch
 
 run:
   path: concourse-configs/tasks/scripts/lint.sh
