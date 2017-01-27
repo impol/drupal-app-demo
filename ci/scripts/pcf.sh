@@ -7,6 +7,8 @@ echo "Installing cf client..."
 wget "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" -q -O- | tar -zx
 mv cf /usr/local/bin
 
+cf login -a https://api.system.pcfdemo.tk -u admin -p U3K5eeJSjFj21Aaoy20zlk4BT8k-Cnbk --skip-ssl-validation
+
 echo "Pushing application ${APP_NAME} to PCF on branch ${branch}..."
 cf push "${APP_NAME}" -b php_buildpack --no-start
 
