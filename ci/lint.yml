@@ -9,4 +9,4 @@ inputs:
 - name: git-branch
 
 run:
-  path: concourse-configs/tasks/scripts/lint.sh
+  path: git-branch/ci/scripts/lint.sh
