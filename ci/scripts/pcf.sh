@@ -4,7 +4,7 @@ export APP_NAME="drupal-app-demo-${branch}"
 export DB_NAME="drupaldb-${branch}"
 
 echo "Installing cf client..."
-curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
+wget "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" -q -O- | tar -zx
 mv cf /usr/local/bin
 
 echo "Pushing application ${APP_NAME} to PCF on branch ${branch}..."
