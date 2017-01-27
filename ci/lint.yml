@@ -8,5 +8,8 @@ image_resource:
 inputs:
 - name: git-branch
 
+outputs:
+- name: lint-reports
+
 run:
   path: git-branch/ci/scripts/lint.sh
