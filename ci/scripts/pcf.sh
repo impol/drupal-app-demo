@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "Pushing application to PCF!"
+echo "Pushing application to PCF on branch ${branch}!"
